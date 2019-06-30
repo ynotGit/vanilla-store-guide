@@ -1,4 +1,11 @@
-h1 {
-  color: red;
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
