@@ -8,7 +8,7 @@ Todo:
 <br>
 [x] render map to page 
 <br>
-[] render icon to map 
+[x] render icon to map 
 <br>
 [] add current user location to map via pin 
 <br>
