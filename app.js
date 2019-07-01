@@ -1,5 +1,7 @@
+//Render Map
 var map = L.map("map").fitWorld();
 
+//Render Map Tiles
 L.tileLayer(
   "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoieW5vdGlubm92YXRlIiwiYSI6ImNqeGo3dmw3bzFjYnUzb21rNWo4N3YwamkifQ.01MtyB2wGg2FuCxM62nTCw",
   {
@@ -12,14 +14,17 @@ L.tileLayer(
   }
 ).addTo(map);
 
+//Add Geocoder
 L.Control.geocoder().addTo(map);
 
+//Waypoint control via Geocoder
 L.Routing.control({
   waypoints: [L.latLng(57.74, 11.94), L.latLng(57.6792, 11.949)],
   routeWhileDragging: true,
   geocoder: L.Control.Geocoder.nominatim()
 }).addTo(map);
 
+//Get Current Location and add radius
 function onLocationFound(e) {
   var radius = e.accuracy / 2;
 
@@ -31,6 +36,7 @@ function onLocationFound(e) {
   L.circle(e.latlng, radius).addTo(map);
 }
 
+//Get current location error handling
 function onLocationError(e) {
   alert(e.message);
 }
