@@ -6,22 +6,24 @@ Todo:
 <br>
 [x] install Leaflet.Js
 <br>
-[x] render map to page 
+[x] render map to page
 <br>
-[x] render icon to map 
+[x] render icon to map
 <br>
-[x] add current user location to map via pin 
+[x] add current user location to map via pin
 <br>
-[x] install leaflet routing machine 
+[x] install leaflet routing machine
 <br>
-[] calculate route from current location to a single store 
+[x] install leaflet geocoder
 <br>
-[] calculate route from user input location to a single store 
+[] calculate route from current location to a single store
 <br>
-[] create a city with recomended stores 
+[] calculate route from user input location to a single store
 <br>
-[] calculate route from current location to multiple stores via waypoints 
+[] create a city with recomended stores
 <br>
-[] calculate route from user input location to multiple stores via waypoints 
+[] calculate route from current location to multiple stores via waypoints
 <br>
-[] create mode of transportation (default is walking) 
+[] calculate route from user input location to multiple stores via waypoints
+<br>
+[] create mode of transportation (default is walking)
