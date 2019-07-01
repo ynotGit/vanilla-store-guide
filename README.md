@@ -16,6 +16,8 @@ Todo:
 <br>
 [x] install leaflet geocoder
 <br>
+[x] calculate route from A to B to user input
+<br>
 [] calculate route from current location to a single store
 <br>
 [] calculate route from user input location to a single store
