@@ -19,7 +19,7 @@ L.Control.geocoder().addTo(map);
 
 //Waypoint control via Geocoder
 L.Routing.control({
-  waypoints: [L.latLng(57.74, 11.94), L.latLng(57.6792, 11.949)],
+  waypoints: [L.latLng(null, null), L.latLng(null, null)],
   routeWhileDragging: true,
   geocoder: L.Control.Geocoder.nominatim()
 }).addTo(map);
