@@ -12,6 +12,8 @@ L.tileLayer(
   }
 ).addTo(map);
 
+L.Control.geocoder().addTo(map);
+
 function onLocationFound(e) {
   var radius = e.accuracy / 2;
 
