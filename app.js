@@ -1,7 +1,7 @@
 var map = L.map("map").fitWorld();
 
 L.tileLayer(
-  "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+  "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoieW5vdGlubm92YXRlIiwiYSI6ImNqeGo3dmw3bzFjYnUzb21rNWo4N3YwamkifQ.01MtyB2wGg2FuCxM62nTCw",
   {
     maxZoom: 18,
     attribution:
@@ -13,7 +13,7 @@ L.tileLayer(
 ).addTo(map);
 
 function onLocationFound(e) {
-  var radius = e.accuracy / 6;
+  var radius = e.accuracy / 2;
 
   L.marker(e.latlng)
     .addTo(map)
