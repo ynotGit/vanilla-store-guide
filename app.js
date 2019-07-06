@@ -26,6 +26,9 @@ function onLocationFound(e) {
   L.circle(e.latlng, radius).addTo(map);
 }
 
+//Continous watch on current location
+map.locate({ setView: true, watch: true, maxZoom: 8 });
+
 //Get current location error handling
 function onLocationError(e) {
   alert(e.message);
