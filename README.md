@@ -12,6 +12,8 @@ Todo:
 <br>
 [x] add current user location to map via pin
 <br>
+[x] add track user location functionality
+<br>
 [x] install leaflet routing machine
 <br>
 [x] install leaflet geocoder
