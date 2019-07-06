@@ -14,16 +14,6 @@ L.tileLayer(
   }
 ).addTo(map);
 
-//Add Geocoder
-L.Control.geocoder().addTo(map);
-
-//Waypoint control via Geocoder
-L.Routing.control({
-  waypoints: [L.latLng(null, null), L.latLng(null, null)],
-  routeWhileDragging: true,
-  geocoder: L.Control.Geocoder.nominatim()
-}).addTo(map);
-
 //Get Current Location and add radius
 function onLocationFound(e) {
   var radius = e.accuracy / 2;
@@ -45,3 +35,10 @@ map.on("locationfound", onLocationFound);
 map.on("locationerror", onLocationError);
 
 map.locate({ setView: true, maxZoom: 16 });
+
+//Waypoint control via Geocoder
+L.Routing.control({
+  waypoints: [L.latLng(null, null), L.latLng(null, null)],
+  routeWhileDragging: true,
+  geocoder: L.Control.Geocoder.nominatim()
+}).addTo(map);
