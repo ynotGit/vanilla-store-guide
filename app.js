@@ -26,9 +26,6 @@ function onLocationFound(e) {
   L.circle(e.latlng, radius).addTo(map);
 }
 
-//Continous watch on current location
-map.locate({ setView: true, watch: true, maxZoom: 8 });
-
 //Get current location error handling
 function onLocationError(e) {
   alert(e.message);
@@ -37,7 +34,8 @@ function onLocationError(e) {
 map.on("locationfound", onLocationFound);
 map.on("locationerror", onLocationError);
 
-map.locate({ setView: true, maxZoom: 16 });
+//Continous watch on current location
+map.locate({ setView: true, watch: true, maxZoom: 16 });
 
 //Waypoint control via Geocoder
 L.Routing.control({
